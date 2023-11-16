@@ -1,0 +1,86 @@
+@media (max-width: 1300px)
+    .promo .container_2
+        padding: 0
+@media (max-width: 1120px)
+    nav
+        a
+            font-size: 13px
+@media (max-width: 980px)
+        nav
+            .container
+                .list
+                    a
+                        font-size: 12px
+                        padding-left: 18px
+                        padding-right: 18px
+@media (max-width: 815px)
+        nav
+            .container
+                .list
+                    a
+                        font-size: 10px
+                        padding-left: 15px
+                        padding-right: 15px
+@media (max-width: 768px)
+    // header nav .hamburger
+    //     position: relative
+    //     display: block
+    //     height: 30px
+    //     width: 30px
+    //     span
+    //         position: absolute
+    //         background-color: white
+    //         height: 2px
+    //         width: 100%
+    header
+        nav
+            position: relative
+            .hamburger
+                position: absolute
+                right: 10px
+                top: 50%
+                transform: translateY(-50%)
+                display: block
+                height: 30px
+                width: 30px
+                span
+                    display: block
+                    background-color: #fff
+                    height: 2px
+                    width: 100%
+                    margin-bottom: 2px
+                    transition: .5s all
+                &_active
+                    span
+                        margin-bottom: -2px
+                        &:nth-child(1)
+                            transform: translateY(12px) rotate(45deg)
+                        &:nth-child(2)
+                            display: none
+                        &:nth-child(3)
+                            transform: translateY(12px) rotate(-45deg)
+
+    .container
+        position: relative
+        .menu
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            background-color: #000
+            top: 0
+            left: 0
+            width: 50%
+            height: 100vh
+            padding: 20px 15px
+            transition: .5s all
+            li
+                padding-right: 0
+                margin: 20px 0px
+                border: none
+            a
+                font-size: 1rem
+                &:hover
+                    color: red
+        &:active
+            left: 0 

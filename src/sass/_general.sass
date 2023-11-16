@@ -1,0 +1,402 @@
+body
+    font-family: 'Roboto', sans-serif
+header
+    width: 100%
+    min-height: 700px
+    background: url('../img/uber_bg.png')center (center / cover) no-repeat
+    .container
+        margin: 0 auto
+    nav
+        // position: relative
+        width: 100%
+        padding: 16px
+        height: 50px
+        background-color: #212121
+        color: #fff
+        .hamburger
+            display: none
+        .menu
+            list-style-type: none
+            display: flex
+            justify-content: space-between
+            li
+                border-right: 2px dotted white
+                &:last-child
+                    border: none
+            a
+                padding-right: 28px
+                padding-left: 28px
+                text-decoration: none
+                color: white
+    .subheader
+        width: 100vw
+        height: 85px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        background-color: rgba(0,0,0,.6)
+        color: #fff
+        .container
+            padding: 0 140px 0 50px
+            display: grid
+            grid-template-columns: 2fr 1fr 1fr 1fr
+    .logo
+        display: block
+        margin-top: 20px
+        img
+            max-width: 100%    
+    &_left
+        width: 50%  
+    &_right
+        width: 50%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .text_and_number
+    .text
+        padding-left: 20px
+        font-size: 14px
+    .number
+        text-decoration: none
+        color: white
+        font-size: 20px
+        &:hover
+            color: red
+    .call
+        margin-left: 30px
+        height: 40px
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 14px
+        background-color: $text-color_1
+        border-radius: 6px
+        color: #fff
+        cursor: pointer
+
+    // .container
+    //     width: 90vw
+.up
+    display: flex
+    margin: 20px auto
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    text-transform: uppercase
+.title
+    background-color: #000
+    color: #fff
+    padding: 8px 12px
+    text-align: center
+.subtitle
+    margin: 0 auto
+    font-size: 38px
+    font-weight: bold
+.promo
+    padding: 10px 20px
+    .container
+        // padding: 0 140px 0 50px
+        margin: 0 auto
+        width: 60vw
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        flex-wrap: wrap
+        &_2
+            padding: 20px 140px 0 140px
+            display: flex
+            justify-content: space-between
+
+    // .left_side
+    //     // display: none
+    .parent
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_round
+            height: 116px
+            width: 116px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: $text_color_1
+            border-radius: 100%
+            margin-right: 25px
+        &_text
+            // background-color: red
+            height: 150px
+            width: 371px
+            line-height: 21px
+            margin-right: 25px
+            margin-bottom: 25px
+        &_title
+            color: $text_color_1
+            font-size: 17px
+            font-weight: 500
+        &_subtitle
+            font-size: 15px
+.opportunities
+    min-height: 864px
+    background: url('../img/mobile_bg.png')
+    .main_content
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        .column_main
+            opacity: .9
+            position: relative
+            margin: 0 auto
+            &:hover
+                opacity: 1
+                transform: rotate(360deg)
+                transition: 2s ease-in-out
+                cursor: pointer
+            &_1
+                background: url('../img/Карточка 1.png')
+                height: 280px
+                width: 320px
+                margin: 30px
+            &_2
+                background: url('../img/Карточка 2.png')
+                height: 280px
+                width: 320px
+                margin: 30px
+            &_3
+                background: url('../img/Карточка 3.png')
+                height: 280px
+                width: 320px
+                margin: 30px
+            &_4
+                background: url('../img/Карточка 4.png')
+                height: 280px
+                width: 320px
+                margin: 30px
+            &_5
+                background: url('../img/Карточка 5.png')
+                height: 280px
+                width: 320px
+                margin: 30px
+            &_6
+                background: url('../img/Карточка 6.png')
+                height: 280px
+                width: 320px
+                margin: 30px
+        .column_text
+                padding: 89px 29px 0px
+                color: white
+                text-transform: uppercase
+                font-size: 24px
+                text-align: center
+                font-family: 'Roboto', sans-serif
+        .plus
+            background-color: #000
+            border-radius: 100%
+            padding: 14px
+            margin: 0 auto
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            margin: 0 auto
+            left: 50%
+            bottom: 30%
+            transform: translateX(-50%)
+            height: 1rem
+            width: 1rem
+            transition: .5s all
+            &:hover
+                left: 46%
+                transform: scale(1.2)
+                background-color: #fff
+            &:before
+                display: block
+                position: absolute
+                content: ''
+                height: 14px
+                width: 2px
+                background-color: $text_color_1
+            &:after
+                display: block
+                position: absolute
+                content: ''
+                height: 2px
+                width: 14px
+                background-color: $text_color_1
+.choose
+    font-family: 'Roboto', sans-serif
+    &_black
+        position: relative
+        text-align: center
+        height: 500px
+        background-color: #000
+        color: #fff
+        &_title
+            display: inline-block
+            background-color: #fff
+            color: #000
+            margin: 54px 0 34px 0
+            padding: 5px 10px
+            text-align: center
+            font-size: 11px
+            text-transform: uppercase
+        &_subtitle
+            text-transform: uppercase
+            font-size: 38px
+            font-weight: bold
+        &_about_subtitle
+            margin-top: 12px
+            font-size: 17px
+    .car
+        position: absolute
+        margin-top: 34px
+        left: 50%
+        transform: translateX(-50%)
+    &_white
+        background: url('../img/mobile_bg.png')
+        min-height: 390px
+        &_text
+            font-size: 17px
+            padding-top: 200px
+            text-align: center
+            margin-bottom: 10px
+        &_text2
+            font-size: 17px
+            text-align: center
+.required
+    .container
+        margin: 0 auto
+        display: flex
+        width: 1130px
+        flex-direction: row
+        justify-content: space-between
+        flex-wrap: wrap
+    .col
+        padding: 20px
+        width: 50%
+    .row
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    .row_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        li
+            position: relative
+            font-size: 15px
+            font-weight: 300
+            line-height: 24px
+            margin-bottom: 10px
+            &::before
+                content: ''
+                position: absolute
+                left: -32px
+                top: 3px
+                display: inline-block
+                width: 21px
+                height: 21px
+                background: url('../icons/check-solid.svg') center (center / cover) no-repeat
+.world
+    margin-top: 50px
+    position: relative
+    height: 720px
+    width: 100%
+    background: url('../img/world_bg.png') center (center / cover) no-repeat
+    &_black
+        position: relative
+        text-align: center
+        color: #fff
+        &_title
+            display: inline-block
+            background-color: #fff
+            color: #000
+            margin: 54px 0 34px 0
+            padding: 5px 10px
+            text-align: center
+            font-size: 11px
+            text-transform: uppercase
+        &_subtitle
+            text-transform: uppercase
+            font-size: 38px
+            font-weight: bold
+        &_about_subtitle
+            margin-top: 12px
+            font-size: 17px
+    &_footer
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 50px
+        text-align: center
+        text-transform: uppercase
+        a
+            text-decoration: none
+            color: $text_color_1
+footer
+    padding: 14px 23px 39px 23px
+    a
+        &:hover
+            text-decoration: none
+.footer
+    &_divider
+        margin: 0 auto
+        height: 5px
+        width: 300px
+        background: $text_color_1
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 32px
+    &_wrapper > div
+        width: 33%
+        &:nth-child(3)
+            display: flex
+            justify-content: flex-end
+    &_social
+        width: 160px
+        display: flex
+        justify-content: space-between
+        a
+            height: 28px
+            width: 28px
+            background-color: #000
+            color: #19a3f4
+            text-decoration: none
+            .fa-facebook-f
+                color: #ffffff
+        &_icon
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0 4px
+    &_links
+        width: 390px
+        margin: 0 auto
+        text-transform: uppercase
+        &_main 
+            display: flex 
+            justify-content: space-between
+            padding: 0 10px
+            a 
+                color: #070716
+                font-size: 15px
+                font-weight: 300
+                text-decoration: none
+            &_sub 
+                display: flex 
+                justify-content: space-between
+                margin-top: 10px
+                a
+                    color: #999999
+                    font-size: 11px
+                    font-weight: 300
+                    text-transform: uppercase
+                    text-decoration: none
+            &_lang 
+                display: block 
+                margin: 0 auto
+                color: #1fbad6
+                font-size: 11px
+                font-weight: 400
+                margin-top: 19px
+                text-transform: uppercase
+                text-align: center
